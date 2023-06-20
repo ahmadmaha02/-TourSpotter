@@ -1,0 +1,25 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/linearLayout" android:layout_width="match_parent" android:layout_height="200dp">
+    <androidx.cardview.widget.CardView android:id="@+id/card" android:layout_width="390dp" android:layout_height="153dp" app:cardCornerRadius="20dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="153dp">
+
+            <TextView
+                android:id="@+id/Nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Nama suatu tempat"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/image"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:id="@+id/descript" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20dp" android:layout_marginTop="10dp" android:layout_marginEnd="24dp" android:text="deskripsine le" android:textColor="@color/black" android:textSize="14sp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toEndOf="@+id/image" app:layout_constraintTop_toBottomOf="@+id/Nama"/>
+            <ImageView android:id="@+id/image" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginStart="24dp" android:layout_marginTop="33dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_launcher_background"/>
+            <androidx.constraintlayout.widget.Barrier android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="top" tools:layout_editor_absoluteX="138dp" tools:layout_editor_absoluteY="12dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
